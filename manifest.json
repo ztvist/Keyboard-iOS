@@ -1,0 +1,16 @@
+{
+  "name": "iPhone 18 Pro Max Keyboard",
+  "short_name": "iOS Keyboard",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#D1D3D9",
+  "theme_color": "#007AFF",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
