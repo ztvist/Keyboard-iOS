@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ios_bg_light"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="10dp">
+
+    <!-- Baris Prediksi Kata (iOS Predictive Bar) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp">
+
+        <TextView
+            android:id="@+id/tvPred1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Aku"
+            android:textColor="@color/ios_text_light"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#B0B3BA" />
+
+        <TextView
+            android:id="@+id/tvPred2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Lagi"
+            android:textColor="@color/ios_text_light"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#B0B3BA" />
+
+        <TextView
+            android:id="@+id/tvPred3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Oke"
+            android:textColor="@color/ios_text_light"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Baris 1: Q W E R T Y U I O P -->
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp" />
+
+    <!-- Baris 2: A S D F G H J K L -->
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp" />
+
+    <!-- Baris 3: SHIFT + Z X C V B N M + BACKSPACE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp">
+
+        <Button
+            android:id="@+id/btnShift"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_key_special"
+            android:text="⇧"
+            android:textColor="@color/ios_text_light"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/btnBackspace"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_key_special"
+            android:text="⌫"
+            android:textColor="@color/ios_text_light"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <!-- Baris 4: 123 + EMOJI + SPASI + RETURN -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp">
+
+        <Button
+            android:id="@+id/btnSymbols"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_key_special"
+            android:text="123"
+            android:textAllCaps="false"
+            android:textColor="@color/ios_text_light"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnEmoji"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_key_special"
+            android:text="😊"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSpace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_key_normal"
+            android:text="spasi"
+            android:textAllCaps="false"
+            android:textColor="@color/ios_text_light"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_key_action"
+            android:text="return"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

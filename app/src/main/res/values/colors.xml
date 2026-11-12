@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palet Warna iOS 20 Light / Dark -->
+    <color name="ios_bg_light">#D1D3D9</color>
+    <color name="ios_key_light">#FFFFFF</color>
+    <color name="ios_key_pressed_light">#E5E5EA</color>
+    <color name="ios_special_light">#ABB0BA</color>
+    <color name="ios_text_light">#000000</color>
+
+    <color name="ios_bg_dark">#1C1C1E</color>
+    <color name="ios_key_dark">#48484A</color>
+    <color name="ios_key_pressed_dark">#636366</color>
+    <color name="ios_special_dark">#2C2C2E</color>
+    <color name="ios_text_dark">#FFFFFF</color>
+
+    <color name="ios_blue">#007AFF</color>
+</resources>
